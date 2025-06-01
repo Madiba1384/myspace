@@ -1,10 +1,20 @@
 ﻿body
 {
-    
+    max-width:100%;
+    padding:0;
+    margin:0;
+    overflow:x;
     text-decoration:none;
     background-color:black;
     color:White;
 }
+.wrapper
+{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+    }
     .navbar
     {
         text-decoration:none;
@@ -79,27 +89,24 @@
              }
         .about
         {
-            padding:60px 20px;
-            max-width:800px;
-            margin-bottom:20px;
+            padding:20px 10px;
             justify-content:space-between;
            text-align:center;
-           padding-left:250px;
            font-size:20px;
            font-weight:300;
          }
-    .about h2
+    .wrapper h2
     {
      
      color:#00ff88;
-     font-size:60px;
+     font-size:2rem;
      margin-bottom:20px;
     }
     
-    .about p
+    .wrapper p
     {
     
-        font-size:22px;
+        font-size:1.1rem;
         line-height:1.6;
     }
     
@@ -155,11 +162,20 @@
          
          }
          
-         @media(min-width: 768px)
+         @media(max-width: 600px)
          {
-             main
+             .wrapper
              {
-                 flex-dirction: row;
+                padding:40px 15px;
+             }
+             .wrapper p
+             {
+                 font-size:1rem;
+             }
+                 .wrapper h2
+                 {
+                     font-size : 1.5rem;
+                     }
                  }
          button:hover
          {
